@@ -11,27 +11,27 @@ const items = [
   {
     src: './images/kliniksrengseng/1.png',
     altText: 'Slide 1',
-    caption: 'Ruang Tunggu'
+    caption: 'Tampak Depan'
   },
   {
     src: './images/kliniksrengseng/2.jpeg',
     altText: 'Slide 2',
-    caption: 'Slide 2'
+    caption: 'Tampak Depan'
   },
   {
     src: './images/kliniksrengseng/3.jpeg',
     altText: 'Slide 3',
-    caption: 'Slide 3'
+    caption: 'Ruang Tunggu'
   },
   {
     src: './images/kliniksrengseng/4.jpeg',
     altText: 'Slide 4',
-    caption: 'Slide 4'
+    caption: 'Ruang Tunggu'
   },
   {
     src: './images/kliniksrengseng/5.jpeg',
     altText: 'Slide 5',
-    caption: 'Slide 5'
+    caption: 'Meja Informasi'
   }
 ];
 
@@ -87,7 +87,7 @@ class KlinikSrengseng extends Component {
     return (
       <div>
         <br/>
-        <h4 style={{ textAlign: 'center' }}>KTA Srengseng Junction</h4>
+        <h4 className="h4LokasiKlinik" style={{ textAlign: 'center' }}>KTA Srengseng Junction</h4>
         <Carousel style={{ width: '100%', height: '100px', overflow: 'hidden' }}
           activeIndex={activeIndex}
           next={this.next}

@@ -11,27 +11,27 @@ const items = [
   {
     src: './images/klinikjagakarsa/1.jpeg',
     altText: 'Slide 1',
-    caption: 'Ruang Tunggu'
+    caption: 'Tampak Depan'
   },
   {
     src: './images/klinikjagakarsa/2.jpeg',
     altText: 'Slide 2',
-    caption: 'Slide 2'
+    caption: 'Ruang Periksa Dokter'
   },
   {
     src: './images/klinikjagakarsa/3.jpeg',
     altText: 'Slide 3',
-    caption: 'Slide 3'
+    caption: 'Ruang Tunggu'
   },
   {
     src: './images/klinikjagakarsa/4.png',
     altText: 'Slide 4',
-    caption: 'Slide 4'
+    caption: 'Ruang Tunggu'
   },
   {
     src: './images/klinikjagakarsa/5.png',
     altText: 'Slide 5',
-    caption: 'Slide 5'
+    caption: 'Ruang Periksa'
   }
 ];
 
@@ -87,7 +87,7 @@ class KlinikJagakarsa extends Component {
     return (
       <div>
         <br/>
-        <h4 style={{ textAlign: 'center' }}>KTA Jagakarsa</h4>
+        <h4 className="h4LokasiKlinik" style={{ textAlign: 'center' }}>KTA Jagakarsa</h4>
         <Carousel style={{ width: '100%', height: '100px', overflow: 'hidden' }}
           activeIndex={activeIndex}
           next={this.next}

@@ -9,18 +9,18 @@ class Layanan extends Component {
           <Row>
             <Col md="4">
               <img style={{ width: '180px', marginBottom: '40px' }} src={'./images/kta-logo.jpeg'} alt="jpg"/>
-              <h3>Terima BPJS Kesehatan</h3>
-              <p>Sampai pada saat ini kami memiliki peserta BPJS terdaftar sebanyak 22.000 lebih.</p>
+              <h3 className="h3Service">Terima BPJS</h3>
+              <p className="pService">Sampai pada saat ini kami memiliki peserta BPJS terdaftar sebanyak 22.000 lebih.</p>
             </Col>
             <Col md="4">
               <img style={{ width: '180px', marginBottom: '40px' }} src={'./images/kta-logo.jpeg'} alt="jpg"/>
-              <h3>Pelayanan Lengkap</h3>
-              <p>Kami memiliki pelayanan Dokter Umum, Dokter Gigi, Bidan, Apotik dan Laboratorium.</p>
+              <h3 className="h3Service">Pelayanan Lengkap</h3>
+              <p className="pService">Kami memiliki pelayanan Dokter Umum, Dokter Gigi, Bidan, Apotik dan Laboratorium.</p>
             </Col>
             <Col md="4">
               <img style={{ width: '180px', marginBottom: '40px' }} src={'./images/kta-logo.jpeg'} alt="jpg"/>
-              <h3>Memiliki 3 Cabang</h3>
-              <p>Sebagai Grup, klinik KTA memiliki 3 Cabang yang tersebar di Jakarta.</p>
+              <h3 className="h3Service">Memiliki 3 Cabang</h3>
+              <p className="pService">Sebagai Grup, klinik KTA memiliki 3 Cabang yang tersebar di Jakarta.</p>
             </Col>
           </Row>
         </Container>

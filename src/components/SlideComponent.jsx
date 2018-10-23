@@ -21,7 +21,7 @@ class SlideComponent extends Component {
                     jejaring bidan, apotik dan lab. Klinik KTA kini telah memiliki jaringan 3 
                     klinik di Jakarta dan memiliki 22.000 lebih peserta BPJS terdaftar.
                   </h4><br/>
-                  <Button className="animated infinite bounce" size="lg" color="warning" href="/tentang-kami">Pelajari Lebih Lanjut <Icon style={{ paddingLeft: '8px' }} size={25} icon={arrowCircleRight}/></Button>
+                  <Button className="btnSlide animated infinite bounce" size="lg" color="warning" href="/tentang-kami">Pelajari Lebih Lanjut <Icon style={{ paddingLeft: '8px' }} size={25} icon={arrowCircleRight}/></Button>
                 </Col>
               </Row>
             </Container>

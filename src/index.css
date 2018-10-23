@@ -74,10 +74,76 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   font-weight: bold;
   color: white;
   text-shadow: 3px 2px 3px rgb(85, 85, 85);
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+
 }
 .h4Slide {
-  font-size: 24px;
+  font-size: 22px;
   color: white;
   line-height: 1.7em;
   text-shadow: 3px 2px 3px rgb(85, 85, 85);
+  font-family: 'Ubuntu', sans-serif;
+
 }
+.btnSlide {
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+}
+.h3Service {
+  font-size: 25px;
+  font-weight: bold;
+  color: #555555;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+.h1Konten {
+  font-size: 35px;
+  font-weight: bold;
+  color: #555555;
+  font-family: 'Ubuntu', sans-serif;
+}
+.pService, .pKonten {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color: #575757;
+  font-size: 19px;
+}
+
+.h4LokasiKlinik {
+  font-family: 'Ubuntu', sans-serif;
+  background: #22c091;
+  padding: 15px;
+  color: white;
+  margin-bottom: 0px;
+  border-bottom: 5px solid #026b43;
+}
+
+.carousel-item {
+  max-height: 200px;
+}
+.klinikDetail {
+  background: rgb(240, 240, 240);
+  color: rgb(63, 63, 63);
+  padding: 15px 15px 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.btnMap {
+  margin-top: -15px;
+}
+.pKlinikDetail {
+  font-size: 14px;
+  line-height: 1.3em;
+  margin-top: -5px;
+}
+.mapWrapper {
+  width: 100%;
+  height: 500px;
+  background: rgb(184, 184, 184);
+}
+.h4KlinikDetail { color: #626262; }
+.mapRed { background: #ffe6e6; }
+.mapOrange { background: #fff0d4; }
+.mapBlue { background: #dceeff; }
