@@ -1,0 +1,70 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .responsive-bg { background: blue; }
+  .headerWrapperMinTablet { display: none; }
+  .headerMobile { display: block; }
+  .slideWrap { height: 460px; }
+  .imgSlide { width: 165%; margin-left: -150px; }
+  .slideContent { margin-top: 50px; }
+  .h1Slide { font-size:40px; }
+  .h4Slide { line-height: 1.5em; font-size: 20px; }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .responsive-bg { background: teal; }
+  .headerWrapperMinTablet { display: none; }
+  .headerMobile { display: block; }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .responsive-bg { background: green; }
+  .headerWrapperMinTablet { display: block; }
+  .headerMobile { display: none; }
+  .logoLargeHeader { width: 70px; }
+  .logoNameLarge {
+    font-size: 20px !important;
+    padding: 20px 0px 0px 5px;
+  }
+  .slideWrap { height: 400px; }
+  .slideContent { margin-top: 70px; }
+  .h1Slide { font-size: 40px; font-size: 35px; }
+  .h4Slide { line-height: 1.3em; font-size: 20px; }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .responsive-bg { background: yellow; }
+  .headerWrapperMinTablet { display: block; }
+  .headerMobile { display: none; }
+  .logoLargeHeader { width: 100px; }
+  .logoNameLarge {
+    font-size: 25px !important;
+    padding: 30px 20px 0px 10px;
+  }
+  .slideWrap { height: 450px; }
+  .slideContent { margin-top: 100px; }
+  .h1Slide { font-size: 40px; }
+  .h4Slide { font-size: 20px; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .responsive-bg { background: red; }
+  .headerWrapperMinTablet { display: block; }
+  .headerMobile { display: none; }
+  .logoNameLarge {
+    font-size: 30px !important;
+    float: left;
+    padding: 27px 20px 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .slideWrap { height: 560px; }
+  .slideContent { margin-top: 150px; }
+  .h1Slide { font-size: 50px; }
+  .h4Slide { font-size: 25px; line-height: 1.5em; }
+  
+}

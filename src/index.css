@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.clear {
+  clear: both;
+}
+.logoLargeHeader {
+  width: 100px;
+  float: left;
+}
+.logoNameLarge {
+  font-size: 25px;
+  float: left;
+  padding: 30px 20px 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #c21919;
+}
+.ulMenuLarge > li {
+  float: left;
+  list-style: none;
+  padding: 10px;
+}
+.ulMenuLarge > li > a { color: white; text-decoration: none; padding: 8px 9px;  }
+.ulMenuLarge > li:hover > a { background: #0c5f30; border-radius: 5px; }
+
+.slideWrap {
+  width: 100%;
+  height: 560px;
+  /* background: red; */
+  position: relative;
+  overflow: hidden;
+}
+.imgSlide {
+  width: 100%;
+  display: table;
+  position: absolute;
+}
+.slideContent {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  z-index: 10;
+  margin-top: 100px;
+  text-align: left;
+}
+.hueSaturation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  /* background: #505050; */
+  opacity: 0.6;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,686868+100 */
+background: rgb(0,0,0); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(104,104,104,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 0%,rgba(104,104,104,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(0,0,0,1) 0%,rgba(104,104,104,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#686868',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.h1Slide {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 2px 3px rgb(85, 85, 85);
+}
+.h4Slide {
+  font-size: 24px;
+  color: white;
+  line-height: 1.7em;
+  text-shadow: 3px 2px 3px rgb(85, 85, 85);
+}
