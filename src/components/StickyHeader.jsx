@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class StickyHeader extends Component {
   render() {
     return (
-      <div className="stickyMenuClass animated fadeInDown" style={{ width: '100%', background: 'white', position: 'fixed', zIndex: 100 }}>
+      <div className="stickyMenuClass animated fadeInDown" style={{ width: '100%', background: '#48bfa2', position: 'fixed', zIndex: 100 }}>
         <Container>
           <Row>
             <Col md="6" style={{ textAlign: 'left' }}>

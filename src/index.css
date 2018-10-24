@@ -155,3 +155,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   font-size: 13px;
   margin: 0;
 }
+.stickyMenuClass {
+  -webkit-box-shadow: 0 0 10px 0 #CCCCCC;
+  box-shadow: 0 0 10px 0 #CCCCCC;
+}
