@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 class DetailMaps extends Component {
   constructor (props) {
@@ -11,14 +11,8 @@ class DetailMaps extends Component {
   }
   chooseMap (e) {
     console.log('Ini map dari klinik', e.target.id)
-    
   }
   render() {
-    const iframeMap = () => {
-      if (this.state.currentMap === 'kta') {
-        return (<iframe src="https://www.google.com/maps/d/embed?mid=1Z3QjLsvMRmcT8kYFQQ2z2-lEqosHMqML" width="640" height="100%"></iframe>)
-      }
-    }
     return (
       <div>
         <Container>
@@ -57,7 +51,7 @@ class DetailMaps extends Component {
             </Col>
             <Col md="7">
               <div className="mapWrapper">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1Z3QjLsvMRmcT8kYFQQ2z2-lEqosHMqML" width="100%" height="100%"></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1Z3QjLsvMRmcT8kYFQQ2z2-lEqosHMqML" width="100%" height="100%" title="iframe"></iframe>
               </div>
             </Col>
           </Row>

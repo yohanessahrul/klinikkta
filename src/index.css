@@ -29,10 +29,11 @@ code {
 .ulMenuLarge > li {
   float: left;
   list-style: none;
-  padding: 10px;
+  /* background: red; */
 }
-.ulMenuLarge > li > a { color: white; text-decoration: none; padding: 8px 9px;  }
-.ulMenuLarge > li:hover > a { background: #0c5f30; border-radius: 5px; }
+.ulMenuLarge > li > a { color: white; text-decoration: none;
+  padding: 10px 15px; display: table; }
+.ulMenuLarge > li:hover { background: #118041;  }
 
 .slideWrap {
   width: 100%;
@@ -147,3 +148,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .mapRed { background: #ffe6e6; }
 .mapOrange { background: #fff0d4; }
 .mapBlue { background: #dceeff; }
+
+.pSimpleFooter {
+  padding: 10px;
+  color: white;
+  font-size: 13px;
+  margin: 0;
+}

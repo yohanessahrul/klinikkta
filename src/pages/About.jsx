@@ -1,14 +1,44 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Navigation from '../components/Navigation';
+import StickyHeader from '../components/StickyHeader';
 import KlinikTamanAnggrek from '../components/KlinikTamanAnggrek';
 import KlinikSrengseng from '../components/KlinikSrengseng';
 import KlinikJagakarsa from '../components/KlinikJagakarsa';
 
 class About extends Component {
+  constructor (props) {
+    super (props)
+    this.state = {
+      stickyMenu: false
+    }
+    this.scrollShowMenu = this.scrollShowMenu.bind(this);
+  }
+  componentDidMount () {
+    window.addEventListener('scroll', this.scrollShowMenu)
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scrollShowMenu);
+  }
+  scrollShowMenu () {
+    if (window.pageYOffset > 150) {
+      this.setState({ stickyMenu: true })
+    }
+    if (window.pageYOffset < 149) {
+      this.setState({ stickyMenu: false })
+    }
+  }
   render() {
+    const StickyMenu = () => {
+      if (this.state.stickyMenu) {
+        return ( <StickyHeader/> )
+      } else {
+        return ''
+      }
+    }
     return (
       <div style={{ textAlign: 'left' }}>
+        {StickyMenu()}
         <Navigation/>
         <div style={{ width: '100%', height: '50px', background: 'white' }}></div>
         <Container>

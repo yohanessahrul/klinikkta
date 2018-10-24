@@ -8,6 +8,7 @@
   .slideContent { margin-top: 50px; }
   .h1Slide { font-size:40px; }
   .h4Slide { line-height: 1.5em; font-size: 20px; }
+  .stickyMenuClass { display: none; }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -15,6 +16,7 @@
   .responsive-bg { background: teal; }
   .headerWrapperMinTablet { display: none; }
   .headerMobile { display: block; }
+  .stickyMenuClass { display: none; }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -37,7 +39,8 @@
   .h4LokasiKlinik { font-size: 16px; }
   .carousel-item, .carousel-item > img { max-height: 170px!important; }
   .mapWrapper { height: 500px!important; }
-  .h4KlinikDetail { font-size: 16px; font-weight: bold; }
+  .h4KlinikDetail { font-size: 16px; }
+  .stickyMenuClass { display: block; }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
