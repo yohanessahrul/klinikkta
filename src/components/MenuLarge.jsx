@@ -45,7 +45,7 @@ class MenuLarge extends Component {
                 <Link to="/klinik-kta-srengseng-junction">Klinik KTA Srengseng Junction</Link>
               </li>
               <li>
-                <Link to="/klinik-kta-surya-cipta">Klinik KTA Surya Cipta</Link>
+                <Link to="/klinik-kta-suryacipta">Klinik KTA Suryacipta</Link>
               </li>
               <li>
                 <Link to="/klinik-syifa-medika">Klinik Syifa Medika</Link>

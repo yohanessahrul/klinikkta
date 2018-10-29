@@ -97,7 +97,7 @@ class KlinikSrengseng extends Component {
           <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous}/>
           <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
         </Carousel>
-        <Button className="btnRedirectKlinik" size="lg" block>Klinik KTA Srengseng J..</Button>
+        <Button style={{ fontSize: '14px' }} className="btnRedirectKlinik" size="lg" block>Klinik KTA Srengseng Junction</Button>
       </div>
     );
   }

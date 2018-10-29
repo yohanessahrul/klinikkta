@@ -27,7 +27,7 @@ class App extends Component {
             <Route exact path="/klinik-taman-anggrek" component={KlinikTamanAnggrekPage}/>
             <Route exact path="/klinik-kta-srengseng-junction" component={KlinikKTASrengseng}/>
             <Route exact path="/klinik-syifa-medika" component={KlinikSyifaMedika}/>
-            <Route exact path="/klinik-kta-surya-cipta" component={KlinikKTASuryacipta}/>
+            <Route exact path="/klinik-kta-suryacipta" component={KlinikKTASuryacipta}/>
             <Route component={NoMatch}/>
           </Switch>
         </Router>
