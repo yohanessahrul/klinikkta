@@ -56,7 +56,7 @@ class StickyHeader extends Component {
               <div style={{ padding: '7px', float: 'left' }}>
                 <img style={{ display: 'table', height: '40px', padding:'3px 5px 3px 3px', background: 'white', borderRadius: '5px' }} src={'./images/kta-logo.jpeg'} alt="logo-sticky-menu"/>
               </div>
-              <p style={{ display: 'table' ,margin: 0, padding: '9px', float: 'left', color: '#fff', fontFamily: 'Ubuntu', fontSize: '25px' }}>KLINIK TAMAN ANGGREK</p>
+              <p className="stickyLogoName">KLINIK TAMAN ANGGREK</p>
             </Col>
             <Col md="6" style={{ textAlign: 'left' }}>
               <div className="stickyMenus">

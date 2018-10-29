@@ -10,7 +10,7 @@ class Layanan extends Component {
             <Col md="4">
               <img style={{ display: 'table' , width: '180px', margin: '0 auto 30px auto' }} src={'./images/kta-logo.jpeg'} alt="jpg"/>
               <h3 className="h3Service">Terima BPJS</h3>
-              <p className="pService">Sampai pada saat ini kami memiliki peserta BPJS terdaftar sebanyak 22.000 lebih.</p>
+              <p className="pService">Sampai pada saat ini kami memiliki peserta BPJS terdaftar sebanyak 30.000 lebih.</p>
             </Col>
             <Col md="4">
               <img style={{ display: 'table' , width: '180px', margin: '0 auto 30px auto' }} src={'./images/kta-logo.jpeg'} alt="jpg"/>

@@ -47,6 +47,7 @@
   .mapWrapper { height: 500px!important; }
   .h4KlinikDetail { font-size: 16px; }
   .stickyMenuClass { display: block; }
+  .stickyLogoName { padding: 9px; font-size: 20px!important; }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -65,6 +66,7 @@
   .h4Slide { font-size: 20px; }
   .carousel-item { max-height: 200px; }
   .h4KlinikDetail { font-size: 24px; font-weight: none!important; }
+  .stickyLogoName { font-size: 25px; }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -86,4 +88,5 @@
   .h1Slide { font-size: 50px; }
   .h4Slide { font-size: 25px; line-height: 1.5em; }
   .mapWrapper { height: 465px!important; }
+  .stickyLogoName { font-size: 25px; }
 }

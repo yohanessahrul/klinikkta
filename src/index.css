@@ -294,3 +294,12 @@ box-shadow: 0 0 10px 0 #ADADAD;
 .hoverList > tbody > tr:hover > td {
   background: #eefbf9 !important;
 }
+.stickyLogoName {
+  display: table;
+  margin: 0;
+  padding: 9px;
+  float: left;
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 25px;
+}
