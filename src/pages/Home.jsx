@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation';
 import StickyHeader from '../components/StickyHeader';
 import SlideComponent from '../components/SlideComponent';
 import Service from '../components/Service';
+import CarouselComponent from '../components/CarouselComponent';
 import Footer from '../components/Footer';
 
 class Home extends Component {
@@ -14,16 +15,19 @@ class Home extends Component {
     this.scrollShowMenu = this.scrollShowMenu.bind(this);
   }
   componentDidMount () {
+    document.title = "Klinik KTA Group";
+    document.querySelector('meta[property="og:title"]').setAttribute("content", "Klinik KTA Group");
+    document.documentElement.scrollTop = 0;
     window.addEventListener('scroll', this.scrollShowMenu)
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.scrollShowMenu);
   }
   scrollShowMenu () {
-    if (window.pageYOffset > 150) {
+    if (window.pageYOffset > 70) {
       this.setState({ stickyMenu: true })
     }
-    if (window.pageYOffset < 149) {
+    if (window.pageYOffset < 69) {
       this.setState({ stickyMenu: false })
     }
   }
@@ -41,6 +45,7 @@ class Home extends Component {
         <Navigation/>
         <SlideComponent/>
         <Service/>
+        <CarouselComponent/>
         <Footer/>
       </div>
     );

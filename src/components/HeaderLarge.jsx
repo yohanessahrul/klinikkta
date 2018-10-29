@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import history from '../history';
 import { Container, Row, Col } from 'reactstrap';
-import MenuHeaderLarge from '../components/MenuLarge';
+import MenuLarge from '../components/MenuLarge';
 
 class HeaderLarge extends Component {
   constructor (props) {
@@ -15,7 +15,7 @@ class HeaderLarge extends Component {
   render() {
     return (
       <div>
-        <div className="headerWrapperMinTablet" style={styles.headerBg}>
+        <div className="headerWrapperMinTablet">
           <Container>
             <Row>
               <Col md="6">
@@ -28,11 +28,11 @@ class HeaderLarge extends Component {
                 </div>
               </Col>
               <Col md="6">
-                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id quo commodi itaque</p> */}
+
               </Col>
             </Row>
           </Container>
-          <MenuHeaderLarge/>
+          <MenuLarge/>
         </div>
       </div>
     );

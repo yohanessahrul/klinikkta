@@ -18,16 +18,19 @@ class Contact extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
   componentDidMount () {
+    document.title = "Klinik KTA Group";
+    document.querySelector('meta[property="og:title"]').setAttribute("content", "Klinik KTA Group");
+    document.documentElement.scrollTop = 0;
     window.addEventListener('scroll', this.scrollShowMenu)
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.scrollShowMenu);
   }
   scrollShowMenu () {
-    if (window.pageYOffset > 150) {
+    if (window.pageYOffset > 70) {
       this.setState({ stickyMenu: true })
     }
-    if (window.pageYOffset < 149) {
+    if (window.pageYOffset < 69) {
       this.setState({ stickyMenu: false })
     }
   }
@@ -90,7 +93,7 @@ class Contact extends Component {
               <div className="detailKontak" style={{ textAlign: 'center' }}>
                 <h4>Nomor Telepon dan Email</h4>
                 <p>
-                  Mobile : 081703631403<br/>
+                  Mobile : 0811-8981-666<br/>
                   Email : info@klinik-kta.com
                 </p>
               </div>

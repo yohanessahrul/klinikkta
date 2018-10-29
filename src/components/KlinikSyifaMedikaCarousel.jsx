@@ -4,38 +4,43 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  Button,
 } from 'reactstrap';
 
 const items = [
   {
-    src: './images/klinikjagakarsa/1.jpeg',
+    src: './images/kliniksyifamedika/Klinik-Syifa-Medika-Tampak-Depan.jpg',
     altText: 'Slide 1',
     caption: 'Tampak Depan'
   },
   {
-    src: './images/klinikjagakarsa/2.jpeg',
+    src: './images/kliniksyifamedika/Klinik-Syifa-Medika-Resepsionis1.jpg',
     altText: 'Slide 2',
-    caption: 'Ruang Periksa Dokter'
+    caption: 'Tampak Depan'
   },
   {
-    src: './images/klinikjagakarsa/3.jpeg',
+    src: './images/kliniksyifamedika/Klinik-Syifa-Medika-Resepsionis2.jpg',
     altText: 'Slide 3',
     caption: 'Ruang Tunggu'
   },
   {
-    src: './images/klinikjagakarsa/4.png',
+    src: './images/kliniksyifamedika/Klinik-Syifa-Medika-Hadiah-Hafal-Quran.jpg',
     altText: 'Slide 4',
     caption: 'Ruang Tunggu'
   },
   {
-    src: './images/klinikjagakarsa/5.png',
+    src: './images/kliniksyifamedika/LKlinik-Syifa-Medika-Launching-Bioskop-Kesehatan.jpg',
     altText: 'Slide 5',
-    caption: 'Ruang Periksa'
+    caption: 'Meja Informasi'
+  },
+  {
+    src: './images/kliniksyifamedika/Klinik-Syifa-Medika-Salaman-dengan-H-Aas.jpg',
+    altText: 'Slide 6',
+    caption: 'Ruang IGD'
   }
 ];
 
-class KlinikJagakarsa extends Component {
+class KlinikSyifaMedikaCarousel extends Component {
   constructor (props) {
     super (props);
     this.state = { activeIndex: 0 }
@@ -80,14 +85,13 @@ class KlinikJagakarsa extends Component {
           key={item.src}
         >
           <img style={{ width: '100%', height: '100px !important' }} src={item.src} alt={item.altText}/>
-          <CarouselCaption captionText={item.caption} />
+          {/* <CarouselCaption captionText={item.caption} /> */}
         </CarouselItem>
       )
     })
     return (
       <div>
         <br/>
-        <h4 className="h4LokasiKlinik" style={{ textAlign: 'center' }}>KTA Jagakarsa</h4>
         <Carousel style={{ width: '100%', height: '100px', overflow: 'hidden' }}
           activeIndex={activeIndex}
           next={this.next}
@@ -98,9 +102,10 @@ class KlinikJagakarsa extends Component {
           <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous}/>
           <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
         </Carousel>
+        <Button className="btnRedirectKlinik" size="lg" block>Klinik Syifa Medika</Button>
       </div>
     );
   }
 }
 
-export default KlinikJagakarsa;
+export default KlinikSyifaMedikaCarousel;

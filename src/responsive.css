@@ -2,7 +2,10 @@
 @media only screen and (max-width: 600px) {
   .responsive-bg { background: blue; }
   .headerWrapperMinTablet { display: none; }
-  .headerMobile { display: block; }
+  .headerMobile {
+    display: block;
+    margin-top: 10px;
+  }
   .slideWrap { height: 460px; }
   .imgSlide { width: 165%; margin-left: -150px; }
   .slideContent { margin-top: 50px; }
@@ -15,7 +18,10 @@
 @media only screen and (min-width: 600px) {
   .responsive-bg { background: teal; }
   .headerWrapperMinTablet { display: none; }
-  .headerMobile { display: block; }
+  .headerMobile {
+    display: block;
+    margin-top: 10px;
+  }
   .stickyMenuClass { display: none; }
 }
 
@@ -27,7 +33,7 @@
   .logoLargeHeader { width: 70px; }
   .logoNameLarge {
     font-size: 20px !important;
-    padding: 20px 0px 0px 5px;
+    /* padding: 20px 0px 0px 5px; */
   }
   .slideWrap { height: 400px; }
   .slideContent { margin-top: 70px; }
@@ -51,7 +57,7 @@
   .logoLargeHeader { width: 100px; }
   .logoNameLarge {
     font-size: 25px !important;
-    padding: 30px 20px 0px 10px;
+    /* padding: 30px 20px 0px 10px; */
   }
   .slideWrap { height: 450px; }
   .slideContent { margin-top: 100px; }
@@ -67,10 +73,12 @@
   .headerWrapperMinTablet { display: block; }
   .headerMobile { display: none; }
   .logoNameLarge {
+    margin: 0;
     font-size: 30px !important;
     float: left;
-    padding: 27px 20px 0px 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0px;
+    padding-left: 15px;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
   }
   .slideWrap { height: 560px; }

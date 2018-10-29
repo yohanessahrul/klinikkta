@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Navigation from '../components/Navigation';
 import StickyHeader from '../components/StickyHeader';
-import KlinikTamanAnggrek from '../components/KlinikTamanAnggrek';
-import KlinikSrengseng from '../components/KlinikSrengseng';
-import KlinikJagakarsa from '../components/KlinikJagakarsa';
+import CarouselComponent from '../components/CarouselComponent';
+import Footer from '../components/Footer';
 
 class About extends Component {
   constructor (props) {
@@ -15,16 +14,19 @@ class About extends Component {
     this.scrollShowMenu = this.scrollShowMenu.bind(this);
   }
   componentDidMount () {
+    document.title = "Klinik KTA Group";
+    document.querySelector('meta[property="og:title"]').setAttribute("content", "Klinik KTA Group");
+    document.documentElement.scrollTop = 0;
     window.addEventListener('scroll', this.scrollShowMenu)
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.scrollShowMenu);
   }
   scrollShowMenu () {
-    if (window.pageYOffset > 150) {
+    if (window.pageYOffset > 70) {
       this.setState({ stickyMenu: true })
     }
-    if (window.pageYOffset < 149) {
+    if (window.pageYOffset < 69) {
       this.setState({ stickyMenu: false })
     }
   }
@@ -37,7 +39,7 @@ class About extends Component {
       }
     }
     return (
-      <div style={{ textAlign: 'left' }}>
+      <div>
         {StickyMenu()}
         <Navigation/>
         <div style={{ width: '100%', height: '50px', background: 'white' }}></div>
@@ -45,27 +47,23 @@ class About extends Component {
           <h1 className="h1Konten">Tentang Kami</h1>
           <Row>
             <Col>
-              <p className="pKonten">Kelompok Klinik KTA di awali dari klinik Taman Anggrek yang pertama didirikan pada tahun 2007 oleh Bapak Soedharmo Koentjoro dan dr. Soenardi. K. SpKJ di Kondominium Taman Anggrek, Jakarta Barat. Dimana awalnya tujuan pendirian tersebut hanyalah untuk melayani penghuni Kondominium Taman Anggrek, kini klinik tersebut telah melayani pasien dari berbagai area sekitar melalui kemitraan dengan BPJS Kesehatan dan beroperasi 24 Jam untuk memenuhi kebutuhan pasien yang terus meningkat.</p>
-              <p className="pKonten">Klinik KTA dan Grup dilengkapi dengan pelayanan dokter umum, dokter gigi, jejaring bidan, apotik dan lab. Klinik KTA kini telah memiliki jaringan 3 klinik di Jakarta dan memiliki 22.000 lebih perserta BPJS terdaftar.</p>
+              <p className="pKonten">
+                Kelompok Klinik KTA di awali dari klinik Taman Anggrek yang pertama didirikan pada
+                tahun 2007 oleh Bapak Soedharmo Koentjoro dan dr. Soenardi. K. SpKJ di
+                Kondominium Taman Anggrek, Jakarta Barat. Dimana awalnya tujuan pendirian
+                tersebut hanyalah untuk melayani penghuni Kondominium Taman Anggrek, kini
+                klinik tersebut telah melayani pasien dari berbagai area sekitar melalui kemitraan
+                dengan BPJS Kesehatan 
+                {/* dan beroperasi 24 Jam  */} 
+                &nbsp; untuk memenuhi kebutuhan pasien
+                yang terus meningkat.
+              </p>
             </Col>
           </Row>
         </Container>
-        <Container>
-          {/* <h2 style={{ textAlign: 'center' }} className="h1Konten">KTA Group</h2> */}
-          <hr/>
-          <Row>
-            <Col md="4">
-              <KlinikTamanAnggrek/>
-            </Col>
-            <Col md="4">
-              <KlinikSrengseng/>
-            </Col>
-            <Col md="4">
-              <KlinikJagakarsa/>
-            </Col>
-          </Row>
-        </Container>
+        <CarouselComponent/>
         <div style={{ width: '100%', height: '100px', background: 'white' }}></div>
+        <Footer/>
       </div>
     );
   }

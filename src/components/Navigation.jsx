@@ -9,26 +9,19 @@ class Navigation extends Component {
     return (
       <div>
         <div className="test"></div>
-        <div className="responsive-bg" style={styles.navigationWrapper}></div>
+        {/* <div className="responsive-bg" style={styles.navigationWrapper}></div> */}
         <HeaderLarge/>
         <HeaderMobile/>
-        {/* <div>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </div> */}
       </div>
     );
   }
 }
 
-const styles = {
-  navigationWrapper: {
-    width: '100%',
-    height: '5px',
-  }
-}
+// const styles = {
+//   navigationWrapper: {
+//     width: '100%',
+//     height: '5px',
+//   }
+// }
 
 export default Navigation;

@@ -14,17 +14,29 @@ code {
 .clear {
   clear: both;
 }
+* {
+  text-align: left;
+}
+.headerWrapperMinTablet {
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,f9f9f9+8,ffffff+18 */
+background: rgb(247,247,247); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(249,249,249,1) 8%, rgba(255,255,255,1) 18%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(247,247,247,1) 0%,rgba(249,249,249,1) 8%,rgba(255,255,255,1) 18%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(247,247,247,1) 0%,rgba(249,249,249,1) 8%,rgba(255,255,255,1) 18%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
 .logoLargeHeader {
-  width: 100px;
+  width: 50px !important;
   float: left;
 }
 .logoNameLarge {
-  font-size: 25px;
+  font-size: 20px;
   float: left;
-  padding: 30px 20px 0px 20px;
+  /* padding: 30px 20px 0px 20px; */
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  color: #c21919;
+  color: #b80000;
 }
 .ulMenuLarge > li {
   float: left;
@@ -33,7 +45,7 @@ code {
 }
 .ulMenuLarge > li > a { color: white; text-decoration: none;
   padding: 10px 15px; display: table; }
-.ulMenuLarge > li:hover { background: #118041;  }
+.ulMenuLarge > li:hover { background: #3c865c;  }
 
 .slideWrap {
   width: 100%;
@@ -85,7 +97,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   line-height: 1.7em;
   text-shadow: 3px 2px 3px rgb(85, 85, 85);
   font-family: 'Ubuntu', sans-serif;
-
 }
 .btnSlide {
   /* font-family: 'Raleway', sans-serif; */
@@ -96,7 +107,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   font-weight: bold;
   color: #555555;
   font-family: 'Ubuntu', sans-serif;
-
+  text-align: center;
 }
 .h1Konten {
   font-size: 35px;
@@ -104,20 +115,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   color: #555555;
   font-family: 'Ubuntu', sans-serif;
 }
+.pService { text-align: center; }
 .pService, .pKonten {
   font-family: 'Raleway', sans-serif;
   font-family: 'Ubuntu', sans-serif;
   color: #575757;
-  font-size: 19px;
+  font-size: 20px!important;
+  padding-top: 10px;
 }
 
 .h4LokasiKlinik {
   font-family: 'Ubuntu', sans-serif;
-  background: #22c091;
+  background: #233428;
   padding: 15px;
   color: white;
   margin-bottom: 0px;
-  border-bottom: 5px solid #026b43;
+  /* border-bottom: 5px solid #026b43; */
 }
 
 .carousel-item {
@@ -150,12 +163,134 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .mapBlue { background: #dceeff; }
 
 .pSimpleFooter {
-  padding: 10px;
+  padding: 30px;
   color: white;
   font-size: 13px;
   margin: 0;
 }
 .stickyMenuClass {
-  -webkit-box-shadow: 0 0 10px 0 #CCCCCC;
-  box-shadow: 0 0 10px 0 #CCCCCC;
+  box-shadow: 0 0 1px 1px #14171c1a, 0 3px 1px 0 #14171c1a;
+}
+
+.stickyMenus {
+  background: red !important;
+} 
+.stickyMenus > ul {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.stickyMenus > ul > li {
+  float: left !important;
+  list-style: none;
+  font-size: 16px;
+}
+.stickyMenus > ul > li > a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px 10px;
+  display: table;
+}
+.stickyMenus > ul > li:hover > a {
+  background: #3c865c;
+}
+.btnRedirectKlinik {
+  border-radius: 0px !important;
+  border: none !important;
+  background: #30a995 !important;
+  color: white !important;
+}
+.btnRedirectKlinik:hover {
+  background: #1d8372 !important;
+}
+
+.hoverMenuKlinik {
+  position: absolute;
+  width: 250px;
+  background: white;
+  z-index: 15;
+  top: 50;
+  left: 0;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px 0 #ADADAD;
+box-shadow: 0 0 10px 0 #ADADAD;
+}
+.leftMinus {
+  left: -190px!important
+}
+.hoverMenuKlinik > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.hoverMenuKlinik > ul > li {
+  display: block;
+  list-style: none;
+  padding: 5px;
+  border-bottom: thin solid #f6f6f6;
+}
+
+.hoverMenuKlinik > ul > li:last-child {
+  border-bottom: none;
+}
+
+.hoverMenuKlinik > ul > li:hover {
+  background: #dfffe6;
+}
+
+.hoverMenuKlinik > ul > li > a {
+  color: gray;
+  display: block;
+  text-decoration: none;
+}
+.koleksiFotoKlinik {
+  /* height: 250px; */
+  background: #30a995;
+  margin-bottom: 20px;
+}
+.layananKlinik > ul > li {
+  float: left;
+  list-style: none;
+  padding-right: 10px;
+}
+.layananTags {
+  margin-top: 30px;
+}
+.layananTags > ul, .layananKlinik > ul {
+  margin: 0; padding: 0;
+}
+.layananTags > ul > li {
+  font-size: 13px;
+  padding: 4px 8px;
+  color: #194444;
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.dokter-color > ul > li {
+  background: #edfefc;
+  border: thin solid #cfebed;
+}
+.dokter-color > ul > li:hover {
+  background: #2bac9d;
+  border: thin solid #0f8072;
+  color: white;
+}
+.others-color > ul > li {
+  background: #f4caf7;
+  border: thin solid #e7a9eb;
+}
+.others-color > ul > li:hover {
+  color: white;
+  background: #c851c6;
+  border: thin solid #9b2f99;
+}
+.boxShadow {
+  -webkit-box-shadow: 0 0 10px 0 #ADADAD;
+box-shadow: 0 0 10px 0 #ADADAD;
+}
+.hoverList > tbody > tr:hover > td {
+  background: #eefbf9 !important;
 }

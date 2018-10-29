@@ -4,7 +4,7 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  Button,
 } from 'reactstrap';
 
 const items = [
@@ -80,14 +80,13 @@ class KlinikSrengseng extends Component {
           key={item.src}
         >
           <img style={{ width: '100%', height: '100px !important' }} src={item.src} alt={item.altText}/>
-          <CarouselCaption captionText={item.caption} />
+          {/* <CarouselCaption captionText={item.caption} /> */}
         </CarouselItem>
       )
     })
     return (
       <div>
         <br/>
-        <h4 className="h4LokasiKlinik" style={{ textAlign: 'center' }}>KTA Srengseng Junction</h4>
         <Carousel style={{ width: '100%', height: '100px', overflow: 'hidden' }}
           activeIndex={activeIndex}
           next={this.next}
@@ -98,6 +97,7 @@ class KlinikSrengseng extends Component {
           <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous}/>
           <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
         </Carousel>
+        <Button className="btnRedirectKlinik" size="lg" block>Klinik KTA Srengseng J..</Button>
       </div>
     );
   }

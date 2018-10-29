@@ -9,28 +9,38 @@ import {
 
 const items = [
   {
-    src: './images/kliniktamananggrek/3.png',
+    src: './images/kliniksuryacipta/Klinik-KTA-Surya-Cipta.jpg',
     altText: 'Slide 1',
     caption: 'Tampak Depan'
   },
   {
-    src: './images/kliniktamananggrek/2.jpeg',
+    src: './images/kliniksuryacipta/Klinik-KTA-Surya-Cipta-IGD.jpg',
     altText: 'Slide 2',
-    caption: 'Ruang Periksa'
+    caption: 'Tampak Depan'
   },
   {
-    src: './images/kliniktamananggrek/1.jpeg',
+    src: './images/kliniksuryacipta/Klinik-KTA-Surya-Cipta-Resepsionis.jpg',
     altText: 'Slide 3',
     caption: 'Ruang Tunggu'
   },
   {
-    src: './images/kliniktamananggrek/4.jpeg',
+    src: './images/kliniksuryacipta/Klinik-KTA-Surya-Cipta-Peresmian.jpg',
     altText: 'Slide 4',
-    caption: 'Alat Periksa'
+    caption: 'Ruang Tunggu'
+  },
+  {
+    src: './images/kliniksuryacipta/Klinik-KTA-Surya-Cipta-Poli.jpg',
+    altText: 'Slide 5',
+    caption: 'Meja Informasi'
+  },
+  {
+    src: './images/kliniksuryacipta/Klinik-KTA-Surya-Cipta-Ruang-IGD.jpg',
+    altText: 'Slide 6',
+    caption: 'Ruang IGD'
   }
 ];
 
-class KlinikTamanAnggrek extends Component {
+class KlinikKTASuryaCipta extends Component {
   constructor (props) {
     super (props);
     this.state = { activeIndex: 0 }
@@ -74,7 +84,7 @@ class KlinikTamanAnggrek extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img style={{ width: '100%', height: '250px !important' }} src={item.src} alt={item.altText}/>
+          <img style={{ width: '100%', height: '100px !important' }} src={item.src} alt={item.altText}/>
           {/* <CarouselCaption captionText={item.caption} /> */}
         </CarouselItem>
       )
@@ -82,8 +92,7 @@ class KlinikTamanAnggrek extends Component {
     return (
       <div>
         <br/>
-        {/* <h4 className="h4LokasiKlinik" style={{ textAlign: 'center' }}>Klinik Taman Anggrek</h4> */}
-        <Carousel style={{ width: '100%', height: '250px', overflow: 'hidden' }}
+        <Carousel style={{ width: '100%', height: '100px', overflow: 'hidden' }}
           activeIndex={activeIndex}
           next={this.next}
           previous={this.previous}
@@ -93,10 +102,10 @@ class KlinikTamanAnggrek extends Component {
           <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous}/>
           <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
         </Carousel>
-        <Button className="btnRedirectKlinik" size="lg" block>Klinik Taman Anggrek</Button>
+        <Button className="btnRedirectKlinik" size="lg" block>Klinik KTA Surya Cipta</Button>
       </div>
     );
   }
 }
 
-export default KlinikTamanAnggrek;
+export default KlinikKTASuryaCipta;

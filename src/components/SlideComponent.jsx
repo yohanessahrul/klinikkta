@@ -17,9 +17,10 @@ class SlideComponent extends Component {
                 <Col md="10">
                   <h1 className="h1Slide animated bounceInDown">Pelayanan Kesehatan KTA</h1>
                   <h4 className="h4Slide animated bounceInLeft">
-                    Klinik KTA dan Grup dilengkapi dengan pelayanan dokter umum, dokter gigi, 
-                    jejaring bidan, apotik dan lab. Klinik KTA kini telah memiliki jaringan 3 
-                    klinik di Jakarta dan memiliki 22.000 lebih peserta BPJS terdaftar.
+                    Klinik KTA dan Grup dilengkapi dengan pelayanan dokter umum, dokter gigi, jejaring
+                    bidan, apotik dan lab. Klinik KTA kini telah dipercaya oleh lebih dari 30.000 peserta
+                    BPJS Kesehatan terdaftar (terbesar di Jakarta Barat) dan mengoperasikan 5 Klinik
+                    Pratama di Jakarta dan sekitar-nya.
                   </h4><br/>
                   <Button className="btnSlide animated infinite bounce" size="lg" color="warning" href="/tentang-kami">Pelajari Lebih Lanjut <Icon style={{ paddingLeft: '8px' }} size={25} icon={arrowCircleRight}/></Button>
                 </Col>

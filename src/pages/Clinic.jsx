@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import Navigation from '../components/Navigation';
 import StickyHeader from '../components/StickyHeader';
 import DetailMaps from '../components/DetailMaps';
@@ -13,16 +13,17 @@ class Clinic extends Component {
     this.scrollShowMenu = this.scrollShowMenu.bind(this);
   }
   componentDidMount () {
+    document.documentElement.scrollTop = 0;
     window.addEventListener('scroll', this.scrollShowMenu)
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.scrollShowMenu);
   }
   scrollShowMenu () {
-    if (window.pageYOffset > 150) {
+    if (window.pageYOffset > 70) {
       this.setState({ stickyMenu: true })
     }
-    if (window.pageYOffset < 149) {
+    if (window.pageYOffset < 69) {
       this.setState({ stickyMenu: false })
     }
   }
@@ -41,7 +42,11 @@ class Clinic extends Component {
         <div style={{ width: '100%', height: '50px', background: 'white' }}></div>
         <Container>
           <h1 className="h1Konten">Klinik</h1><br/>
-          <p>Lokasi Klinik KTA dan Grup Saat ini.</p>
+          <Row>
+            <Col>
+              <p className="pKonten">Klinik KTA merupakan Grup yang terdiri dari Klinik Taman Anggrek, Klinik-KTA Srengseng, dan Klinik-KTA Jagakarsa, Masing-masing klinik kami tersebar di wilayah Jakarta, antara lain :</p>
+            </Col>
+          </Row>
         </Container>
         <DetailMaps/>
         <div style={{ width: '100%', height: '100px', background: 'white' }}></div>

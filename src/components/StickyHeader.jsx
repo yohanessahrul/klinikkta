@@ -3,30 +3,75 @@ import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class StickyHeader extends Component {
+  constructor (props) {
+    super (props)
+    this.state = {
+      hoverKlinik: false
+    }
+    this.hoverKlinik = this.hoverKlinik.bind(this);
+    this.antiHoverKlinik = this.antiHoverKlinik.bind(this);
+  }
+
+  hoverKlinik () {
+    console.log('Hover Klinik Menu')
+    this.setState({
+      hoverKlinik: true
+    })
+  }
+  antiHoverKlinik () {
+    this.setState({
+      hoverKlinik: false
+    })
+  }
   render() {
+    const showHoverKlinik = () => {
+      if (this.state.hoverKlinik) {
+        return (
+          <div className="hoverMenuKlinik leftMinus">
+            <ul>
+              <li>
+                <Link to="/klinik-taman-anggrek">Klinik Taman Anggrek</Link>
+              </li>
+              <li>
+                <Link to="/klinik-kta-srengseng-junction">Klinik KTA Srengseng Junction</Link>
+              </li>
+              <li>
+                <Link to="/klinik-kta-surya-cipta">Klinik KTA Surya Cipta</Link>
+              </li>
+              <li>
+                <Link to="/klinik-syifa-medika">Klinik Syifa Medika</Link>
+              </li>
+            </ul>
+          </div>
+        )
+      } else {
+        return ''
+      }
+    }
     return (
-      <div className="stickyMenuClass animated fadeInDown" style={{ width: '100%', background: '#48bfa2', position: 'fixed', zIndex: 100 }}>
+      <div className="stickyMenuClass animated fadeInDown" style={{ width: '100%', background: '#479569', position: 'fixed', zIndex: 100 }}>
         <Container>
           <Row>
             <Col md="6" style={{ textAlign: 'left' }}>
-              <div style={{ padding: '10px', float: 'left' }}>
-                <img style={{ display: 'table', height: '30px' }} src={'./images/kta-logo.jpeg'} alt="logo-sticky-menu"/>
+              <div style={{ padding: '7px', float: 'left' }}>
+                <img style={{ display: 'table', height: '40px', padding:'3px 5px 3px 3px', background: 'white', borderRadius: '5px' }} src={'./images/kta-logo.jpeg'} alt="logo-sticky-menu"/>
               </div>
-              <h5 style={{ padding: '13px 10px 3px 0px', float: 'left', color: '#a0111b' }}>KLINIK TAMAN ANGGREK</h5>
+              <p style={{ display: 'table' ,margin: 0, padding: '9px', float: 'left', color: '#fff', fontFamily: 'Ubuntu', fontSize: '25px' }}>KLINIK TAMAN ANGGREK</p>
             </Col>
             <Col md="6" style={{ textAlign: 'left' }}>
-              <div style={{ width: '100%', background: 'yellow' }}>
-                <ul style={{ padding: 0, margin: 0, float: 'right' }}>
-                  <li style={{ listStyle: 'none', float: 'left', padding: '12px' }}>
-                    <Link to="/">Home</Link>
+              <div className="stickyMenus">
+                <ul>
+                  <li>
+                    <Link to="/">Beranda</Link>
                   </li>
-                  <li style={{ listStyle: 'none', float: 'left', padding: '12px' }}>
+                  <li>
                     <Link to="/tentang-kami">Tentang Kami</Link>
                   </li>
-                  <li style={{ listStyle: 'none', float: 'left', padding: '12px' }}>
-                    <Link to="/klinik">Klinik</Link>
+                  <li style={{ position: 'relative' }}>
+                    <Link to="#" onClick={this.hoverKlinik}>Klinik</Link>
+                    {showHoverKlinik()}
                   </li>
-                  <li style={{ listStyle: 'none', float: 'left', padding: '12px' }}>
+                  <li>
                     <Link to="/kontak">Kontak</Link>
                   </li>
                 </ul>
