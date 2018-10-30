@@ -197,11 +197,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .btnRedirectKlinik {
   border-radius: 0px !important;
   border: none !important;
-  background: #30a995 !important;
+  background: #195a2f !important;
   color: white !important;
 }
 .btnRedirectKlinik:hover {
-  background: #1d8372 !important;
+  background: #104321 !important;
 }
 
 .hoverMenuKlinik {
@@ -245,7 +245,7 @@ box-shadow: 0 0 10px 0 #ADADAD;
 }
 .koleksiFotoKlinik {
   /* height: 250px; */
-  background: #30a995;
+  background: #195a2f;
   margin-bottom: 20px;
 }
 .layananKlinik > ul > li {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Table, Badge } from 'reactstrap';
+import { Container, Row, Col, Table, Badge, Button } from 'reactstrap';
 import Navigation from '../components/Navigation';
 import StickyHeader from '../components/StickyHeader';
 import KlinikKTASrengsengCarousel from '../components/KlinikSrengseng';
@@ -59,6 +59,13 @@ class KlinikKTASrengseng extends Component {
               <div className="koleksiFotoKlinik">
                 <KlinikKTASrengsengCarousel/>
               </div>
+              <Button
+                target="_blank"
+                href="https://web.whatsapp.com/send?phone=6287878519000"
+                style={{ background: '#53C657', border: 'thin solid #53C657', marginBottom: '20px' }}
+                size="lg"
+                block
+              >Whatsapp Chat</Button>
             </Col>
             <Col md="8">
               <h4>Alamat</h4>
