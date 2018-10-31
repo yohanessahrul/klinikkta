@@ -303,3 +303,7 @@ box-shadow: 0 0 10px 0 #ADADAD;
   font-family: Ubuntu;
   font-size: 25px;
 }
+.alertify .ajs-footer .ajs-buttons .ajs-button.ajs-ok {
+  color: #3593d2;
+  text-align: center;
+}

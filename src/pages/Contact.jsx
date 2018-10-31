@@ -44,7 +44,14 @@ class Contact extends Component {
   onSubmit (e) {
     e.preventDefault();
     console.log('SIMPAN FORM', this.state)
-    alertify.alert('Pesan Terkirim', `Terimakasih ${this.state.fullname}, pesan anda telah terkirim kepada tim kami`, function(){ alertify.success('Pesan Terkirim'); });
+    if (this.state.fullname !== '' && this.state.email !== '' && this.state.subject !== '' && this.state.message !== '') {
+      alertify.alert('Pesan Terkirim', `Terimakasih ${this.state.fullname}, pesan anda telah terkirim kepada tim kami`, function(){ alertify.success('Pesan Terkirim'); });
+      this.setState({
+        fullname: '', subject: '', email: '', message: ''
+      })
+    } else {
+      alertify.alert('Perhatian !!!', 'Tolong isi formulir dengan lengkap dan benar!')
+    }
   }
   render() {
     const StickyMenu = () => {
@@ -65,16 +72,16 @@ class Contact extends Component {
             <Col md="5">
               <Form onSubmit={this.onSubmit}>
                 <FormGroup>
-                  <Input onChange={this.onChange} type="text" name="fullname" placeholder="Nama Lengkap"/>
+                  <Input onChange={this.onChange} type="text" name="fullname" placeholder="Nama Lengkap" value={this.state.fullname}/>
                 </FormGroup>
                 <FormGroup>
-                  <Input onChange={this.onChange} type="text" name="subject" placeholder="Subject"/>
+                  <Input onChange={this.onChange} type="text" name="subject" placeholder="Subject" value={this.state.subject}/>
                 </FormGroup>
                 <FormGroup>
-                  <Input onChange={this.onChange} type="email" name="email" placeholder="Alamat Email"/>
+                  <Input onChange={this.onChange} type="email" name="email" placeholder="Alamat Email" value={this.state.email}/>
                 </FormGroup>
                 <FormGroup>
-                  <Input onChange={this.onChange} type="textarea" name="message" placeholder="Isi Pesan"/>
+                  <Input onChange={this.onChange} type="textarea" name="message" placeholder="Isi Pesan" value={this.state.message}/>
                 </FormGroup>
                 <FormGroup>
                   <Button color="warning">Kirim Pesan</Button>
@@ -88,13 +95,12 @@ class Contact extends Component {
                   Kondominium Taman Anggrek Twr 2-L7 <br/>
                   Jl. Let. Jend. S. Parman Kav 21,<br/>
                   Slipi, Jakarta Barat 11470
-                  Telp: 021-560-9432
                 </p>
               </div>
               <div className="detailKontak" style={{ textAlign: 'center' }}>
                 <h4>Nomor Telepon dan Email</h4>
                 <p>
-                  Mobile : 0811-8981-666<br/>
+                  Telp: 021-560-9432<br/>
                   Email : info@klinik-kta.com
                 </p>
               </div>

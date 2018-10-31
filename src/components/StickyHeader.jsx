@@ -62,17 +62,17 @@ class StickyHeader extends Component {
               <div className="stickyMenus">
                 <ul>
                   <li>
-                    <Link to="/">Beranda</Link>
+                    <Link to="/" onMouseOver={this.antiHoverKlinik}>Beranda</Link>
                   </li>
                   <li>
-                    <Link to="/tentang-kami">Tentang Kami</Link>
+                    <Link to="/tentang-kami" onMouseOver={this.antiHoverKlinik}>Tentang Kami</Link>
                   </li>
                   <li style={{ position: 'relative' }}>
                     <Link to="#" onClick={this.hoverKlinik}>Klinik</Link>
                     {showHoverKlinik()}
                   </li>
                   <li>
-                    <Link to="/kontak">Kontak</Link>
+                    <Link to="/kontak" onMouseOver={this.antiHoverKlinik}>Kontak</Link>
                   </li>
                 </ul>
               </div>
