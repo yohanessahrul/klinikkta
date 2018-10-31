@@ -61,7 +61,6 @@ class Contact extends Component {
         <div style={{ width: '100%', height: '50px', background: 'white' }}></div>
         <Container>
           <h1>Kontak</h1>
-            {/* { `${this.state.fullname}, ${this.state.subject}, ${this.state.email}, ${this.state.message}` } <br/> */}
           <Row>
             <Col md="5">
               <Form onSubmit={this.onSubmit}>

@@ -61,7 +61,7 @@ class KlinikKTASrengseng extends Component {
               </div>
               <Button
                 target="_blank"
-                href="https://web.whatsapp.com/send?phone=6287878519000"
+                href="https://api.whatsapp.com/send?phone=6287878519000"
                 style={{ background: '#53C657', border: 'thin solid #53C657', marginBottom: '20px' }}
                 size="lg"
                 block
