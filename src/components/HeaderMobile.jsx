@@ -61,8 +61,8 @@ class HeaderMobile extends Component {
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/klinik-kta-suryacipta">
-                        Klinik KTA Suryacipta
+                      <Link to="/klinik-okupasi-kta-suryacipta">
+                        Klinik Okupasi KTA Suryacipta
                       </Link>
                     </DropdownItem>
                     <DropdownItem>

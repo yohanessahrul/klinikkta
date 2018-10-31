@@ -23,8 +23,8 @@ class KlinikKTASuryacipta extends Component {
     this.scrollShowMenu = this.scrollShowMenu.bind(this);
   }
   componentDidMount () {
-    document.title = "Klinik KTA Surya Cipta";
-    document.querySelector('meta[property="og:title"]').setAttribute("content", "Klinik KTA Surya Cipta");
+    document.title = "Klinik Okupasi KTA Suryacipta";
+    document.querySelector('meta[property="og:title"]').setAttribute("content", "Klinik Okupasi KTA Suryacipta");
     document.documentElement.scrollTop = 0;
     window.addEventListener('scroll', this.scrollShowMenu)
   }
@@ -53,7 +53,7 @@ class KlinikKTASuryacipta extends Component {
         <Navigation/>
         <div style={{ width: '100%', height: '50px', background: 'white' }}></div>
         <Container>
-          <h1 className="h1Konten">Klinik KTA Surya Cipta</h1><br/>
+          <h1 className="h1Konten">Klinik Okupasi KTA Suryacipta</h1><br/>
           <Row>
             <Col md="4">
               <div className="koleksiFotoKlinik">
@@ -104,7 +104,7 @@ class KlinikKTASuryacipta extends Component {
                   <thead>
                     <tr style={{ background: '#d5482a', color: 'white' }}>
                       <th>
-                        <h5 style={{ textAlign: 'center' }}>Daftar Layanan <Badge style={{ marginLeft: '10px', paddingRight: '9px', color: 'white', background: '#a30101' }}>10</Badge></h5>
+                        <h5 style={{ textAlign: 'center' }}>Daftar Layanan <Badge style={{ marginLeft: '10px', paddingRight: '9px', color: 'white', background: '#a30101' }}>9</Badge></h5>
                       </th>
                     </tr>
                   </thead>
@@ -117,7 +117,6 @@ class KlinikKTASuryacipta extends Component {
                     <tr><td><Icon icon={check} size={20} style={{ color: '#79cf79', marginRight: '10px' }} />Distributor Suplemen Herbacure</td></tr>
                     <tr><td><Icon icon={check} size={20} style={{ color: '#79cf79', marginRight: '10px' }} />Rekam Medis Digital oleh MyClinicalPro</td></tr>
                     <tr><td><Icon icon={check} size={20} style={{ color: '#79cf79', marginRight: '10px' }} />Asosiasi HRD Suryacipta (ASPHRI)</td></tr>
-                    <tr><td><Icon icon={check} size={20} style={{ color: '#79cf79', marginRight: '10px' }} />Jasa Pelatihan oleh Parashade Training</td></tr>
                     <tr><td><Icon icon={check} size={20} style={{ color: '#79cf79', marginRight: '10px' }} />Laboratorium , Radiologi dan MCU</td></tr>
                   </tbody>
                 </Table>

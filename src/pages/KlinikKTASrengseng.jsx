@@ -76,7 +76,7 @@ class KlinikKTASrengseng extends Component {
                 Telp: 021-948-75-942
               </p>
               <p style={{ fontWeight: 'bold' }}>
-                Jam Operasional : <span style = {{ color: '#e54444' }}>Pukul 11:00 - 20:00 WIB</span>
+                Jam Operasional : <span style = {{ color: '#e54444' }}>Setiap hari, Pukul 11:00 - 20:00 WIB</span>
               </p>
               <div className="layananTags dokter-color">
                 <h4 style={{ marginTop: '-15px' }}>Tenaga Ahli</h4>

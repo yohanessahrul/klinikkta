@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "alertifyjs": "^1.11.2",
     "animate.css": "^3.7.0",
     "aos": "^2.3.4",
     "bootstrap": "^4.1.3",

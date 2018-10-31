@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Button, Form, FormGroup, Input } from 'reactstrap';
 import Navigation from '../components/Navigation';
 import StickyHeader from '../components/StickyHeader';
+import alertify from 'alertifyjs';
 
 class Contact extends Component {
   constructor (props) {
@@ -43,6 +44,7 @@ class Contact extends Component {
   onSubmit (e) {
     e.preventDefault();
     console.log('SIMPAN FORM', this.state)
+    alertify.alert('Pesan Terkirim', `Terimakasih ${this.state.fullname}, pesan anda telah terkirim kepada tim kami`, function(){ alertify.success('Pesan Terkirim'); });
   }
   render() {
     const StickyMenu = () => {

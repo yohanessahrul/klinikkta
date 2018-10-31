@@ -36,7 +36,7 @@ class StickyHeader extends Component {
                 <Link to="/klinik-kta-srengseng-junction">Klinik KTA Srengseng Junction</Link>
               </li>
               <li>
-                <Link to="/klinik-kta-suryacipta">Klinik KTA Suryacipta</Link>
+                <Link to="/klinik-okupasi-kta-suryacipta">Klinik Okupasi KTA Suryacipta</Link>
               </li>
               <li>
                 <Link to="/klinik-syifa-medika">Klinik Syifa Medika</Link>
