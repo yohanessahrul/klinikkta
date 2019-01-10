@@ -6,11 +6,13 @@ import Service from '../components/Service';
 import CarouselComponent from '../components/CarouselComponent';
 import Footer from '../components/Footer';
 
+import PopUpAds from '../components/PopUpAds';
+
 class Home extends Component {
   constructor (props) {
     super (props)
     this.state = {
-      stickyMenu: false
+      stickyMenu: false,
     }
     this.scrollShowMenu = this.scrollShowMenu.bind(this);
   }
@@ -43,6 +45,7 @@ class Home extends Component {
       <div>
         {StickyMenu()}
         <Navigation/>
+        <PopUpAds/>
         <SlideComponent/>
         <Service/>
         <CarouselComponent/>

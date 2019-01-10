@@ -13,6 +13,7 @@ import KlinikTamanAnggrekPage from './pages/KlinikTamanAnggrekPage';
 import KlinikKTASrengseng from './pages/KlinikKTASrengseng';
 import KlinikSyifaMedika from './pages/KlinikSyifaMedika';
 import KlinikKTASuryacipta from './pages/KlinikKTASuryacipta';
+import EmbedPage from './pages/EmbedPage';
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
             <Route exact path="/klinik-kta-srengseng-junction" component={KlinikKTASrengseng}/>
             <Route exact path="/klinik-syifa-medika" component={KlinikSyifaMedika}/>
             <Route exact path="/klinik-okupasi-kta-suryacipta" component={KlinikKTASuryacipta}/>
+            <Route path="/reservasi" component={EmbedPage}/>
             <Route component={NoMatch}/>
           </Switch>
         </Router>
