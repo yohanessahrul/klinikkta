@@ -5,7 +5,6 @@ import SlideComponent from '../components/SlideComponent';
 import Service from '../components/Service';
 import CarouselComponent from '../components/CarouselComponent';
 import Footer from '../components/Footer';
-
 import PopUpAds from '../components/PopUpAds';
 
 class Home extends Component {
@@ -45,7 +44,7 @@ class Home extends Component {
       <div>
         {StickyMenu()}
         <Navigation/>
-        <PopUpAds/>
+        {/* <PopUpAds/> */}
         <SlideComponent/>
         <Service/>
         <CarouselComponent/>
