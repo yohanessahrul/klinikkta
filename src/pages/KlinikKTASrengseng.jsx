@@ -73,7 +73,7 @@ class KlinikKTASrengseng extends Component {
                 Srengseng Junction Lt 2
                 Jl. Srengseng Raya No. 69<br/>
                 Kel. Srengseng – Kembangan, Jakarta Barat
-                Telp: 021-948-75-942
+                Telp: 0878-7851-9000
               </p>
               <p style={{ fontWeight: 'bold' }}>
                 Jam Operasional : <span style = {{ color: '#e54444' }}>Setiap hari, Pukul 11:00 - 20:00 WIB</span>
